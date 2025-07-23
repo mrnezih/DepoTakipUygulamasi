@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepoTakip", "DepoTakip.csproj", "{AFF4D690-763B-EF30-7F82-6F9FE853B3B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFF4D690-763B-EF30-7F82-6F9FE853B3B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF4D690-763B-EF30-7F82-6F9FE853B3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF4D690-763B-EF30-7F82-6F9FE853B3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF4D690-763B-EF30-7F82-6F9FE853B3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D9E50D8-6CD6-41E1-A597-D46E79E747C5}
+	EndGlobalSection
+EndGlobal
