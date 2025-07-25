@@ -1,6 +1,6 @@
 # 🧮 Depo Takip Sistemi
 
-![Logo](Resources/uguricon.png) <!-- veya uygun başka bir görsel yolu -->
+![Logo](DepoTakip/Resources/uguricon.png) <!-- veya uygun başka bir görsel yolu -->
 
 Modern, sade ve kullanıcı dostu bir arayüzle geliştirilmiş **Depo Takip Sistemi**, özellikle okul gibi kurumsal yapılarda ürün giriş-çıkışlarını, kalan stok miktarlarını ve kategorik envanter yönetimini kolaylaştırmak için tasarlanmıştır.
 
@@ -23,12 +23,10 @@ Modern, sade ve kullanıcı dostu bir arayüzle geliştirilmiş **Depo Takip Sis
 ## 🖼️ Arayüzden Görseller
 
 ### Stok Listesi
-![Stok Listesi](ekran-gorselleri/stoklist.png)
+![Stok Listesi](DepoTakip/ekran-gorselleri/stoklist.png)
 
 ### Ürün Girişi ve Çıkışı
-![Ürün Girişi](ekran-gorselleri/giris.png)
-
-> Görseller `ekran-gorselleri` klasörüne konulmalı ve yukarıdaki gibi referans verilmelidir.
+![Ürün Girişi](DepoTakip/ekran-gorselleri/giris.png)
 
 ---
 
