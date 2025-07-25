@@ -1,7 +1,5 @@
 # 🧮 Depo Takip Sistemi
 
-![Logo](DepoTakip/Resources/uguricon.png) <!-- veya uygun başka bir görsel yolu -->
-
 Modern, sade ve kullanıcı dostu bir arayüzle geliştirilmiş **Depo Takip Sistemi**, özellikle okul gibi kurumsal yapılarda ürün giriş-çıkışlarını, kalan stok miktarlarını ve kategorik envanter yönetimini kolaylaştırmak için tasarlanmıştır.
 
 ---
