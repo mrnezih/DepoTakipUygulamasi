@@ -23,10 +23,10 @@ Modern, sade ve kullanıcı dostu bir arayüzle geliştirilmiş **Depo Takip Sis
 ## 🖼️ Arayüzden Görseller
 
 ### Stok Listesi
-![Stok Listesi](DepoTakip/ekran-gorselleri/stoklist.png)
+![Stok Listesi](DepoTakip/ekran-gorselleri/stoklist.PNG)
 
 ### Ürün Girişi ve Çıkışı
-![Ürün Girişi](DepoTakip/ekran-gorselleri/giris.png)
+![Ürün Girişi](DepoTakip/ekran-gorselleri/giris.PNG)
 
 ---
 
