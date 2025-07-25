@@ -24,7 +24,7 @@ Modern, sade ve kullanıcı dostu bir arayüzle geliştirilmiş **Depo Takip Sis
 ![Stok Listesi](DepoTakip/ekran-gorselleri/stoklist.PNG)
 
 ### Ürün Girişi ve Çıkışı
-![Ürün Girişi](DepoTakip/ekran-gorselleri/giris.PNG)
+![Ürün Girişi](DepoTakip/ekran-gorselleri/ekle.PNG)
 
 ---
 
