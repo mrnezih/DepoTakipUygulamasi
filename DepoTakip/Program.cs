@@ -1,26 +1,48 @@
-namespace DepoTakip;
+using System;
+using System.IO;
+using System.Windows.Forms;
+using DepoTakip.DataAccess;
 
-static class Program
+namespace DepoTakip
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    static void Main()
+    internal static class Program
     {
+       [STAThread]
+static void Main()
+{
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(false);
+    ApplicationConfiguration.Initialize();
+
+    try
+    {
+        // DB oluşturma/uygulama migration'ı
         try
-{
-    Application.Run(new Form1());
-}
-catch (Exception ex)
-{
-    File.WriteAllText("hata_log.txt", ex.ToString());
-}
-        // To customize application configuration such as set high DPI settings or default font,
-        // see https://aka.ms/applicationconfiguration.
-        Application.EnableVisualStyles();
-Application.SetCompatibleTextRenderingDefault(false);
-        ApplicationConfiguration.Initialize();
+        {
+            using (var db = new DepoTakip.DataAccess.DatabaseContext())
+            {
+                // Burada oluşursa, veritabanı oluşturma zamanında neler olduğunu loglayacağız
+                db.Database.EnsureCreated();
+            }
+        }
+        catch (Exception exDb)
+        {
+            File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "veritabani_hata_log.txt"),
+                $"EnsureCreated EXCEPTION: {exDb}\n\nDate: {DateTime.Now}");
+            // Sonra uygulama yine açılmasın: hata logu yazıldıktan sonra çökmesini engellemek için devam edebilirsin,
+            // ama şimdilik yine throw et ki hatayı görüp düzeltelim:
+            throw;
+        }
+
         Application.Run(new Form1());
-    }    
+    }
+    catch (Exception ex)
+    {
+        File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "uygulama_hata_log.txt"),
+            $"{ex}\n\nDate: {DateTime.Now}");
+        MessageBox.Show("Uygulama başlatılırken hata oluştu. Masaüstüne yazılan log dosyalarını bana at.");
+    }
+}
+
+    }
 }
